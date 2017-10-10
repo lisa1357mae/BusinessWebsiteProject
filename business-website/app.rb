@@ -36,6 +36,13 @@ end
 get '/gallery' do
 	@class = "gallery"
   erb :gallery
+
+get '/gallery' do
+  erb :gallery
+end
+
+get '/schedule' do
+  erb :schedule
 end
 
 get '/gallery' do
