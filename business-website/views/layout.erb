@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
    <head>
-       <title>Contact</title>
-       <link rel="stylesheet" href="public/css/default.css"/>
+       <title>Yoga Studio</title>
+       <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+       <link rel="stylesheet" href="/css/default.css"/>
    </head>
    <body>
+   	<header>
+   	  <%= erb :nav %>
+   	</header>
       <%= yield %>
+    <footer>
+	  <i class="fa fa-facebook-square"></i>
+	  <i class="fa fa-instagram"></i>
+	  <i class="fa fa-twitter"></i>
+    </footer>
+      <script src="/js/main.js"></script>
    </body>
 </html>
