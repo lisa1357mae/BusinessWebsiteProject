@@ -1,56 +1,89 @@
-form {
+/*contact.erb*/
+
+form, table {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }
 
+.input {
+	width: 400px;
+	height: 40px;
+}
+
 #submit {
 	border: none;
 	font-size: 20px;
-	padding: 5%;
+	padding: 3% 6%;
 	border-radius: 12px;
 }
 
-form,
-nav {
+tr {
+	height: 50px;
+}
+
+textarea {
+	width: 350px;
+	height: 80px;
+}
+
+form {
 	font-family: 'Quicksand', sans-serif;
 }
 
-header,
-footer {
-	background-color: orange;
-	height: 100px;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	position: fixed;
-	left: 0;
-	right: 0;
-}
-
-header {
-	top: 0;
-}
-
-footer {
+#contactFooter {
+	height: 70px;
+	background-color: #333;
+	position: absolute;
 	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+footer {
 	font-size: 30px;
+	color: #fff;
+	text-align: center;
 }
 
 footer i {
-	font-color: black;
+	padding-right: 1%;
+	padding-top: 1%;
 }
+
+/*end of contact.erb*/
+
+/*schedule.erb*/
+
+
+
+
 
 nav ul {
-	list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-nav ul li {
-	float: right;
-	padding-right: 1%;
+nav li {
+    float: left;
 }
 
-nav ul li a {
-	text-decoration: none;
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
 }
