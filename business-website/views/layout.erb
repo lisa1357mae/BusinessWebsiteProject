@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
    <head>
-       <title>Contact</title>
-       <link rel="stylesheet" href="public/css/default.css"/>
+       <title><%= @title %></title>
+       <link rel="stylesheet" href="/css/default.css"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
    </head>
    <body>
+      <%= erb :nav %>
+     <div class="jumbotron text-center">
+       <img src="http://www.purityhealthandwellness.com/online-yoga.jpg" class="img-fluid" alt="Responsive image">
+       <h1>Elemental Yoga</h1>
+       <p>yoga in your element</p>
+     </div>
+
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-4">
+           <h3>Your Home</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+         </div>
+         <div class="col-sm-4">
+           <h3>Your Element</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+         </div>
+         <div class="col-sm-4">
+           <h3>In Paradise</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+         </div>
+       </div>
+     </div>
+
       <%= yield %>
+      <script src="/js/main.js"></script>
    </body>
 </html>
