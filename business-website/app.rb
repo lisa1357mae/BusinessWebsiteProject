@@ -4,13 +4,13 @@ get '/' do
   erb :home
 end
 
-get '/' do
+get '/contact' do
   erb :contact
 end
 
-get '/about' do
+get '/gallery' do
   erb :gallery
 end
-get '/help' do
+get '/schedule' do
   erb :schedule
 end
