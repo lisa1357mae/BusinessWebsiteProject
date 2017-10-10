@@ -1,9 +1,28 @@
-<h1>Contact us today</h1>
-<form>
-  <label for="name">Name</label>
-  <input name="name" type="text" />
-  <label for="email">Email</label>
-  <input name="email" type="text" />
-  <label for="message">Message</label>
-  <textarea></textarea>
+<form method="post">
+  <table>
+  <tr>
+  	<td colspan="2"><h1>Have a question? Contact us today</h1></td>
+  </tr>	
+  <tr>
+  	<td><label for="name">First and Last Name:</label></td>
+  	<td><input name="name" type="text" class="input" /></td>
+  </tr>
+  <tr>
+  	<td><label for="email">Email Address:</label></td>
+  	<td><input name="email" type="text" class="input" /></td>
+  </tr>
+  <tr>
+  	<td><label for="message">Enter your Message:</label></td>
+  	<td><textarea name="message"></textarea></td>
+  </tr>
+  <tr>
+  	<td><input type="submit" id="submit" /></td>
+  </tr>
+  </table>
 </form>
+<footer id="contactFooter">
+  <i class="fa fa-facebook"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-twitter"></i>
+  <i class="fa fa-pinterest-p"></i>
+</footer>
