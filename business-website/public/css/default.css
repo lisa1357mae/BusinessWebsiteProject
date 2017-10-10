@@ -18,8 +18,9 @@ nav li {
 }
 
 nav li a {
+	font-size: 20px;
     display: block;
-    color: white;
+    color: #fffae0;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,4 +32,24 @@ nav a:hover:not(.active) {
 
 .active {
 background-color:#4CAF50;
+}
+
+.img-fluid  {
+
+	    width: 100%;
+	    height: auto;
+
+
+}
+.img-circle {
+		border-radius: 50%;
+}
+
+* {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	background-color:
+}
+
+h1 {
+font-size: 100px;
 }
