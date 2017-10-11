@@ -13,9 +13,9 @@
        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
 
    </head>
-   <body>        
+   <body class="<%= @class %>">
       <%= erb :nav %>
-      <%= yield %>
+        <%= yield %>
       <script src="/js/main.js"></script>
    </body>
 </html>

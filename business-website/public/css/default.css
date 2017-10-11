@@ -59,7 +59,7 @@ footer i {
 
 
 
-
+/*nav.erb*/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -89,6 +89,8 @@ nav a:hover:not(.active) {
 background-color:#4CAF50;
 }
 
+
+/*home.erb*/
 .img-fluid  {
 
 	    width: 100%;
@@ -109,14 +111,9 @@ h1 {
 font-size: 100px;
 }
 
+/*gallery.erb*/
 
-.col-md-4 {
-	float: inherit;
-	padding-right:
-
-}
-
-.gallery body {
+.container {
 	background-color: grey;
 	text-align: center;
 }
