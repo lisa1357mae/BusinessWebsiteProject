@@ -1,10 +1,20 @@
 /*contact.erb*/
 
-form, table {
+.contact form, .contact table {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
+}
+
+.contact form input,
+.contact textarea {
+	border-style: solid;
+	border-width: 0.5px;
+}
+
+.contact table {
+	width: 600px;
 }
 
 .input {
@@ -19,16 +29,16 @@ form, table {
 	border-radius: 12px;
 }
 
-tr {
+.contact tr {
 	height: 50px;
 }
 
-textarea {
+.contact textarea {
 	width: 350px;
 	height: 80px;
 }
 
-form {
+.contact form {
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -54,9 +64,87 @@ footer i {
 
 /*end of contact.erb*/
 
+
+
 /*schedule.erb*/
 
+.schedule table {
+	width: 50%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: white;
+	font-weight: bold;
+	opacity: 0.6;
+}
 
+.monday:hover,
+.tuesday:hover,
+.wednesday:hover,
+.thursday:hover,
+.friday:hover,
+.saturday:hover,
+.sunday:hover {
+	font-size: 30px;
+	background-color: lightblue;
+}
+
+.schedule th {
+	cursor: pointer;
+}
+
+.schedule tr {
+	height: 75px;
+}
+
+.schedule tr,
+.schedule th,
+.schedule td {
+	text-align: center;
+}
+
+.schedule {
+	background-image: url("http://fireflyhotnflowyoga.com/wp-content/uploads/2016/09/Yoga-Studio-Guelph-2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.schedule #close {
+	position: absolute;
+	top: 0;
+	right: 2%;
+	font-size: 40px;
+}
+
+.schedule #modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 1;
+	cursor: pointer;
+	background-color: lightblue;
+	height: 70%;
+	width: 70%;
+}
+
+.schedule .classInfo {
+	text-align: center;
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+
+.schedule .classImg {
+	float: right;
+	width: 60%;
+	height: 100%;
+}
+
+/*end of schedule.erb*/
 
 
 /*nav.erb*/
