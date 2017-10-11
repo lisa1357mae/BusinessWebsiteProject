@@ -16,7 +16,7 @@ post '/contact' do
 
 	from = SendGrid::Email.new(email: params[:email])
 	subject = 'Hello World from the SendGrid Ruby Library!'
-	to = SendGrid::Email.new(email:'lisa@zagenta.com')
+	to = SendGrid::Email.new(email:'lisamae135b7@me.com')
 	content = SendGrid::Content.new(type:'text/plain', value:'Hello, Email!')
 	mail = SendGrid::Mail.new(from, subject, to, content)
 	sg = SendGrid::API.new(api_key:ENV['SENDGRID_API_KEY'])
