@@ -25,7 +25,7 @@ post '/contact' do
 	puts response.status_code
 	puts response.body
 
-	response.body.to_s
+	redirect '/'
 end
 
 get '/schedule' do
