@@ -199,9 +199,7 @@ h1 {
 font-size: 100px;
 }
 
-/*gallery.erb*/
-
 .container {
-	background-color: grey;
+	background-color: #958ba0;
 	text-align: center;
 }
